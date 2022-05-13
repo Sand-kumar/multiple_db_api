@@ -109,7 +109,7 @@ class GetVoters(views.APIView):
         #     print('error caught')
         #     print(type(voters))
         #     # voters=json.dumps(voters)
-        # voters = voters.order_by('s_no')
+        voters = voters.order_by('s_no')
         print(type(voters))
         voters = voters[offset:limit + offset].values()
 
